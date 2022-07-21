@@ -1,0 +1,175 @@
+:root{
+    --color: rgba(86, 108, 75);
+    /* --txt: rgb(185, 185, 185) */
+    --txt: black;
+}
+
+::selection{
+    background-color: green;
+    color: white;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--txt);
+
+    /* outline: 1px solid red; */
+}
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-container,
+.logo{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+/* left side */
+
+.picture{
+    background-image: url(./img/bg-img.jpg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 40vw;
+}
+
+
+.logo{
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    top: 20vh;
+    gap: 1vw;
+    padding: 15px 0;
+
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: white;
+}
+
+.oddin-logo {
+    height: 10vh;
+}
+
+
+/* right side */
+
+.right{
+    width: 60vw;
+    /* background-color: white; */
+    background-color: rgb(249, 250, 251);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    
+
+}
+
+.left{
+    padding-left: 3vw;
+    background-color: rgb(249, 250, 251);
+}
+.btn{
+    padding-left: 3vw;
+}
+
+.phrase{
+    font-weight: 700;
+    width: 90%;
+    font-size: 1.9rem;
+}
+
+.remote-text{
+    margin: 40px 0 80px;
+}
+
+
+/* form */
+
+.form{
+    background-color: white;
+    box-shadow: 0 10px -5px white, 0 10px -5px white;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.input{
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.form-title{
+    width: 100%;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+input{
+    background-color: white;
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 3px;
+    color: black;
+    padding: 5px;
+    font-size: 1.5em;
+}
+
+input:focus{
+    /* outline: none; */
+    border: 1px solid #E5E7EB;
+}
+
+/* #password:invalid, #confirm-password:invalid{
+    border-color: red;
+    border-width: 1px;
+    border-style: solid;
+} */
+#password::after{
+    content: "* it is invalid";
+}
+
+button{
+    background-color: rgb(86, 108, 75);
+    /* color: var(--color); */
+    font-weight: 700;
+    font-size: 1.2em;
+    border: 2px solid;
+    border-color: none;
+    border-radius: 10px;
+    padding: 15px 40px;
+    margin: 40px 0;
+    color: white;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.log-in{
+    display: flex;
+    gap: 5px;
+    margin-left: 3vw;
+    font-weight: 520;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color);
+    font-weight: 700;
+}
